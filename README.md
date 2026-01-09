@@ -55,3 +55,17 @@ Permettre aux utilisateurs de réserver des ressources (salles, équipements) su
 ```bash
 git clone https://github.com/fatimaelhd/reservation-api.git
 
+## Insertion de données de test
+-- Utilisateurs
+INSERT INTO USERS (NAME, EMAIL) VALUES 
+('Fatima', 'fatima@mail.com'),
+('Ahmed', 'ahmed@mail.com'),
+('Sara', 'sara@mail.com');
+
+-- Ressources
+INSERT INTO RESOURCES (NAME) VALUES 
+('Meeting Room'),
+('Projector'),
+('Conference Hall');
+
+

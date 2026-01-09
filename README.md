@@ -20,6 +20,35 @@ Permettre aux utilisateurs de réserver des ressources (salles, équipements) su
 - Spring Data JPA / Hibernate
 - H2 Database (pour développement et tests)
 - API REST
+- Maven pour la gestion des dépendances
+
+## 🏗️ Architecture
+
+- **Entities** : `User`, `Resource`, `Reservation`
+- **Repositories** : JPA Repositories pour la persistance
+- **Services** : Logique métier, vérification des conflits, gestion transactionnelle
+- **Controllers** : Exposition des endpoints REST
+- **Tests unitaires** : sécurisation de la logique métier
+
+---
+
+## ⚙️ Règles métier
+
+- Une **ressource ne peut être réservée** que si aucun autre utilisateur ne l’a réservée sur le même créneau.
+- Les **créneaux horaires** doivent être valides (`startTime < endTime`).
+- Chaque réservation est associée à un **utilisateur et une ressource**.
+- Les **ID** des entités sont générés automatiquement pour éviter les collisions.
+
+---
+
+## 🧪 Tests
+
+- Les tests unitaires vérifient la logique métier (création, conflits, validation des horaires).
+- Les endpoints REST ont été testés avec **Postman** pour garantir la circulation correcte des données.
+- La base H2 en mémoire permet de lancer rapidement des tests sans configuration externe.
+
+---
+
 
 ## Lancer le projet
 1. Cloner le repository :

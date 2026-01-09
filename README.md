@@ -12,7 +12,7 @@ Permettre aux utilisateurs de réserver des ressources (salles, équipements) su
 - Gestion des **ressources** (création, consultation)
 - Création et consultation des **réservations**
 - Vérification automatique des **conflits de réservation**
-- Statut de réservation (CONFIRMED, éventuellement CANCELLED ou PENDING)
+- Statut de réservation (CONFIRMED)
 
 ## Technologies utilisées
 - Java 17

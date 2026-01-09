@@ -1,0 +1,4 @@
+2026-01-09 08:51:12.367122+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]selext * from users"; attendu "SAVEPOINT, SCRIPT, SHUTDOWN"
+Syntax error in SQL statement "[*]selext * from users"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selext * from users [42001-240]
